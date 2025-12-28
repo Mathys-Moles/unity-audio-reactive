@@ -2,32 +2,38 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ValidAudioClip : MonoBehaviour
+namespace AudioReactive.Factory
 {
-    [SerializeField] private AudioSource _Source;
-    [SerializeField] private Text _Texte;
-
-
-    private bool _IsValid;
-    public UnityEvent onValid;
-    public UnityEvent onNoValid;
-
-    public bool IsValid
+    public class ValidAudioClip : MonoBehaviour
     {
-        get { return _IsValid; }
-        private set
+        [SerializeField] private AudioSource _Source;
+        [SerializeField] private Text _Texte;
+
+
+        private bool _IsValid;
+        public UnityEvent onValid;
+        public UnityEvent onNoValid;
+
+        public bool IsValid
         {
-            _IsValid = value;
-            if (_IsValid)
+            get { return _IsValid; }
+            private set
             {
-                _Texte.text = _Source.clip.name;
-                onValid?.Invoke();
+                _IsValid = value;
+                if (_IsValid)
+                {
+                    _Texte.text = _Source.clip.name;
+                    onValid?.Invoke();
+                }
+                else onNoValid?.Invoke();
             }
-            else onNoValid?.Invoke();
         }
-    }
-    private void Update()
-    {
-        IsValid = _Source.clip != null;
+        private void Update()
+        {
+            IsValid = _Source.clip != null;
+        }
+
+        
     }
 }
+
