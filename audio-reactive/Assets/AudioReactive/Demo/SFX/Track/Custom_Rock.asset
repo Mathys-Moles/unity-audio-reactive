@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3930a4ba1e024b94da59c3bc7f88e7de, type: 3}
+  m_Name: Custom_Rock
+  m_EditorClassIdentifier: 
+  ticksTime:
+  - 0
+  - 8.4522295
+  - 9.070896
+  - 9.454896
+  - 10.606896
+  - 11.097563
+  - 11.481563
+  - 12.654896
+  - 13.145562
+  - 13.486896
+  - 14.638896
+  - 15.150896
+  - 15.492229
+  - 16.70823
+  - 17.134895
+  - 17.497562
+  - 18.585562
+  - 20.633562
+  - 21.124228
+  - 21.44423
+  - 22.574896
+  - 23.065561
+  - 23.449562
+  - 24.622894
+  - 25.113562
+  - 25.454895
+  - 26.585562
+  - 28.654896
+  - 29.124228
+  - 29.422895
+  - 30.532228
+  - 31.022896
+  - 31.36423
+  - 41.04
+  _Delay: 0

@@ -1,0 +1,19 @@
+{
+    "name": "Audio-Reactive-Factory",
+    "rootNamespace": "",
+    "references": [
+        "GUID:24e398f7c6084824e81ef87d825d2e6f"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "Kepler"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
